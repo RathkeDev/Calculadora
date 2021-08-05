@@ -33,12 +33,15 @@ export default function App() {
        case '%': 
         setCurrentNumber((fistNumber * lastNumber/100).toString())
         return
+      case '+/-': 
+        setCurrentNumber((fistNumber*(-1)).toString())
+        return
     }
   }
 
   function handleInput(buttonPressed){
     console.log(buttonPressed) // Mostra no Console a tecla pressionada
-    if(buttonPressed === '+' | buttonPressed === "-" | buttonPressed === "x" | buttonPressed === "/"  | buttonPressed === "%" ){
+    if(buttonPressed === '+' | buttonPressed === "-" | buttonPressed === "x" | buttonPressed === "/"  | buttonPressed === "%" | buttonPressed === "+/-" ){
       setCurrentNumber(currentNumber + " " + buttonPressed + " ")
       return
     }
