@@ -34,7 +34,7 @@ export default function App() {
         setCurrentNumber((fistNumber * lastNumber/100).toString())
         return
       case '+/-': 
-        setCurrentNumber((fistNumber*(-1)).toString())
+        setCurrentNumber((fistNumber *(-1)).toString())
         return
     }
   }
@@ -99,17 +99,17 @@ const styles = StyleSheet.create({
   results: {
     flex: 2,
     justifyContent: "center",
-    backgroundColor: "#f5f5f5"
+    backgroundColor: "#2d2e4c"
   },
   resultText: {
-    color: "#282F38",
+    color: "white",
     fontSize: 32,
     fontWeight: "bold",
     padding: 12,
     textAlign: "right"
   },
   historyText:{
-    color: "#7c7c7c",
+    color: "white",
     fontSize: 20,
     marginRight: 10,
     alignSelf: 'flex-end',
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   button: {
-    backgroundColor: 'white',
+    backgroundColor: '#5a446c',
     alignItems: 'center',
     justifyContent: 'center',
     minWidth: 90, 
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     flex: 2,
   },
   textButton: {
-    color: "#7c7c7c",
+    color: "white",
     fontSize: 20,
   } 
 });
